@@ -19,10 +19,11 @@ final class WorkoutRequestDto implements RequestDto {
     @PresentDay(groups = SecondCheck.class)
     private final LocalDate workoutDate;
 
+    @NotNull(groups = FirstCheck.class)
     @Digits(integer = 5, fraction = 0, groups = FirstCheck.class)
     @Min(value = 20, groups = SecondCheck.class)
     @Max(value = Short.MAX_VALUE-1, groups = SecondCheck.class)
-    private final short workoutLength;
+    private final Short workoutLength;
 
     @NotNull(groups = FirstCheck.class)
     private final Long accountId;
