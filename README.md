@@ -53,7 +53,7 @@ export DB_PASSWORD="yourpassword"
 
 ### Project Structure
 
-Package by layer project structure is implemented mantaining all possible classes package private, emphasizing coupling avoidance.
+Package by feature project structure is implemented mantaining all possible classes package private, emphasizing coupling avoidance.
 
 | Module | Description |
 |---|---|
